@@ -1,0 +1,119 @@
+@import 'bourbon/bourbon';
+@import "neat/neat";
+
+body {
+	font-family: "adobe-garamond-pro";
+	font-size: 1.5rem;
+	
+}
+
+p, table, blockquote {
+	padding: 0.5rem 0 0.5rem 0;
+}
+
+blockquote {
+	@include span-columns(4 of 8);
+}
+
+p {
+	line-height: 2rem;
+	@include span-columns(12 of 12);
+
+}
+
+.quote {
+	font-style: italic;
+	display: block;
+	clear: both;
+	line-height: 2rem;
+}
+
+/* TABLE STYLES */
+	table {
+		line-height: 2rem;
+		font-size: 1.5rem;
+		@include span-columns(8 of 12);
+		@include shift(3)
+	}
+
+	tr {
+		@include span-columns(8 of 8);
+		padding: 1rem 0 1rem 0;
+	}
+
+	td {
+		-webkit-font-feature-settings: 'tnum';
+		-moz-font-feature-settings: 'tnum';
+		-ms-font-feature-settings: 'tnum';
+	}
+
+	.label {
+		@include span-columns(4 of 8);
+		
+	}
+
+/* HEADER STYLES */
+	h1 {
+		display: block;
+		padding: 4rem 0 0 0;
+		font-weight: 500;
+		font-size: 6rem;
+		font-style: italic;
+		
+	}
+
+	h2 {
+		margin: 2rem 0 2rem 0;
+		font-size: 2rem;
+		line-height: 2.5rem;
+		font-variant: small-caps;
+		text-transform: lowercase;
+		font-feature-settings: "smcp" on;
+		letter-spacing: 0.1rem;
+		@include span-columns(10 of 12);
+		@include shift(1);
+
+	}
+
+	h3 {
+		display: block;
+		margin: 3rem 0 2rem 0;
+		font-style: italic;
+		font-size: 2rem;
+		@include span-columns(12 of 12);
+		text-align: center;
+
+	}
+
+/* LIST STYLES */
+	ul {
+		list-style-type: lower-roman;
+		line-height: 2rem;
+		@include span-columns(10 of 12);
+		@include shift(1);
+	}
+
+	li {
+		font-style: italic;
+	}
+
+
+.last {
+	padding-bottom: 10rem;
+}
+
+
+div.container {
+  @include outer-container;
+}
+
+header {
+	@include span-columns(8);
+	@include shift(2);
+	text-align:center;
+}
+
+div.content {
+	@include span-columns(8);
+	@include shift(2);
+}

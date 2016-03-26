@@ -1,0 +1,128 @@
+@import 'bourbon/bourbon';
+@import "neat/neat";
+
+body {
+	font-family: "jubilat",sans-serif;
+	font-size: 1.5rem;
+	
+}
+
+p, table, blockquote {
+	padding: 0.5rem 0 0.5rem 0;
+}
+
+blockquote {
+	@include span-columns(6 of 8);
+	@include shift(1);
+}
+
+p {
+	line-height: 2rem;
+	@include span-columns(12 of 12);
+	clear: both;
+
+}
+
+aside {
+	clear: both;
+	padding: 1em 0 1em 0;
+	font-size: 2em;
+	color: #e2e2e2;
+	text-align: center;
+}
+
+.quote {
+	font-style: italic;
+	display: block;
+	clear: both;
+	line-height: 2rem;
+}
+
+/* TABLE STYLES */
+	table {
+		line-height: 2rem;
+		font-size: 1.2rem;
+		letter-spacing: 0.04rem;
+		@include span-columns(10 of 12);
+	}
+
+	tr {
+		@include span-columns(10 of 10);
+		padding: 1rem 0 1rem 0;
+		border-bottom: 1px #e2e2e2 dotted;
+	}
+
+	td {
+		-webkit-font-feature-settings: 'tnum';
+		-moz-font-feature-settings: 'tnum';
+		-ms-font-feature-settings: 'tnum';
+	}
+
+	.label {
+		@include span-columns(8 of 10);
+		font-weight: 800;
+		
+	}
+
+/* HEADER STYLES */
+	h1 {
+		display: block;
+		padding: 4rem 0 0 0;
+		font-size: 6rem;
+		font-weight: 800;
+		
+	}
+
+	h2 {
+		margin: 2rem 0 1.5rem 0;
+		font-size: 2rem;
+		line-height: 2.5rem;
+		@include span-columns(12 of 12);
+
+	}
+
+	h3 {
+		display: block;
+		margin: 2rem 0 0.5rem 0;
+		font-size: 1.6rem;
+		text-transform: uppercase;
+		letter-spacing: 0.1rem;
+		font-weight: 800;
+		@include span-columns(12 of 12);
+
+	}
+
+/* LIST STYLES */
+	ul {
+		list-style-type: square;
+		line-height: 2rem;
+		@include span-columns(10 of 12);
+		@include shift(1);
+	}
+
+	li {
+
+	}
+
+
+.last {
+	padding-bottom: 10rem;
+	@include span-columns(12);
+}
+
+
+div.container {
+  @include outer-container;
+}
+
+header {
+	@include span-columns(8);
+	@include shift(2);
+	border-bottom: 1px #e2e2e2 dotted;
+}
+
+div.content {
+	@include span-columns(8);
+	@include shift(2);
+	margin-top: 1rem;
+}
