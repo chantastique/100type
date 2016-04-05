@@ -6,20 +6,20 @@
     <meta content='' name='author'>
     <meta content='3 days' name='revisit-after'>
     <link href='styles/css/reset.css' media='screen' rel='stylesheet'>
-    <link href='styles/css/012.css' media='screen' rel='stylesheet'>
-    <script src='https://use.typekit.net/bhs8wjy.js'></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+    <?php
+        $number = rand(1,6);
+        include "loaders/$number.php";
+
+    ?>
+
     <meta content='width=device-width; initial-scale=1.0; maximum-scale=1.0;' name='viewport'>
   </head>
   <body></body>
   <div class='container'>
     <header>
-      <h1>
-        <span id="h1-1">One</span> <span id="h1-2">Hundred</span> <span id="h1-3">Type</span> <span id="h1-4">Compositions</span>
-      </h1>
-      <h2 id='sub'>
-        An exercise in <span>typography</span>, <span>decision-making</span> and <span>accepting imperfection</span>.
-      </h2>
+      <h1>One Hundred Type Compositions</h1>
+      <h2 id='sub'>An excerise in typography, decision-making and accepting imperfection</h2>
     </header>
     <div class='content'>
       <div class='text' id='one'>
@@ -29,14 +29,14 @@
       </div>
       <div class='quote' id='two'>
         <blockquote>
-          The ceramics teacher announced on opening day that he was dividing the class into two groups. All those on the left side of the studio, he said, would be graded solely on the quantity of work they produced, all those on the right solely on its quality. His procedure was simple: on the final day of class he would bring in his bathroom scales and weigh the work of the &lsquo;quantity&rsquo; group: fifty pound of pots rated an &lsquo;A&rsquo;, forty pounds a &lsquo;B&rsquo;, and so on. Those being graded on &lsquo;quality&rsquo;, however, needed to produce only one pot&mdash;albeit a perfect one&mdash;to get an &lsquo;A&rsquo;.
+          &ldquo;The ceramics teacher announced on opening day that he was dividing the class into two groups. All those on the left side of the studio, he said, would be graded solely on the quantity of work they produced, all those on the right solely on its quality. His procedure was simple: on the final day of class he would bring in his bathroom scales and weigh the work of the &lsquo;quantity&rsquo; group: fifty pound of pots rated an &lsquo;A&rsquo;, forty pounds a &lsquo;B&rsquo;, and so on. Those being graded on &lsquo;quality&rsquo;, however, needed to produce only one pot&mdash;albeit a perfect one&mdash;to get an &lsquo;A&rsquo;.
         </blockquote>
         <blockquote>
-          Well, came grading time and a curious fact emerged: the works of highest quality were all produced by the group being graded for quantity. It seems that while the &lsquo;quantity&rsquo; group was busily churning out piles of work&mdash;and learning from their mistakes&mdash;the &lsquo;quality&rsquo; group had sat theorizing about perfection, and in the end had little more to show for their efforts than grandiose theories and a pile of dead clay.
+          &ldquo;Well, came grading time and a curious fact emerged: the works of highest quality were all produced by the group being graded for quantity. It seems that while the &lsquo;quantity&rsquo; group was busily churning out piles of work&mdash;and learning from their mistakes&mdash;the &lsquo;quality&rsquo; group had sat theorizing about perfection, and in the end had little more to show for their efforts than grandiose theories and a pile of dead clay.&rdquo;
         </blockquote>
       </div>
       <div class='bullet' id='three'>
-        <h3>And then the light-bulb moment</h3>
+        <h3>And there was the light-bulb moment</h3>
         <p>
           I realized I&rsquo;d been pressuring myself to deliver the &lsquo;best&rsquo;, and instead of practicing, I'd been spinning my wheels trying to figure out what &lsquo;best&rsquo; meant. Hunting for a definitive, objective definition of something so subjective trapped me in analysis-paralysis. It made me wonder:
         </p>
@@ -46,16 +46,18 @@
           <li>How could I break those barriers down?</li>
         </ul>
       </div>
+      <div class='pullquote' id='four'>
+        <aside>
+          &ldquo;It&rsquo;s a gift not to think too much.&rdquo;
+        </aside>
+      </div>
       <div class='text' id='five'>
         <h3>That tricky brain of mine</h3>
         <p>
           I could say that I was just a perfectionist, that I <em>just cared too much</em>, that I <em>sweated the details</em> or whatever, but the reality of the situation was, I was scared of looking dumb and scared of being bad. I knew how much I didn't know, and was afraid of wearing it on my sleeve.
         </p>
-        <aside>
-          &ldquo;It&rsquo;s a gift to not think much.&rdquo;
-        </aside>
         <p>
-          I tricked myself into believing this excessive research and studying was necessary. Really, I just wanted to feel productive without <em>actually doing or risking anything</em>.
+          I tricked myself into believing this excessive research and studying was necessary. Really, I just wanted to feel productive without <em>actually doing anything</em>, without <em>risking anything</em>.
         </p>
       </div>
       <div class='text' id='six'>
@@ -64,13 +66,13 @@
           So, here we are. I&rsquo;m typesetting this text 100 different ways, while timing myself. More than just typography practice, I want to train myself to be honest with my abilities and comfortable with the process of growth.
         </p>
         <p>
-          By repeating the process over and over, in a short time window, I&rsquo;m pushing against my natural inclinations. No spending days and days picking the right typeface. No endless cyles of tweaking. Typeset, evaluate, move on. To paraphrase my boss: &ldquo;It&rsquo;s a gift to not think much.&rdquo;
+          By repeating the process over and over, in a short time window, I&rsquo;m pushing against my natural inclinations. No spending days and days picking the right typeface. No endless cyles of tweaking. Typeset, evaluate, move on. To paraphrase my boss: &ldquo;It&rsquo;s a gift not to think too much.&rdquo;
         </p>
       </div>
       <div class='stats' id='seven'>
         <h3>Some numbers</h3>
         <table>
-          <tr id='table-1'>
+          <tr>
             <td class='label'>
               Total Compositions
             </td>
@@ -78,7 +80,7 @@
               100
             </td>
           </tr>
-          <tr id='table-2'>
+          <tr>
             <td class='label'>
               Total Typefaces Used
             </td>
@@ -86,7 +88,7 @@
               78
             </td>
           </tr>
-          <tr id='table-3'>
+          <tr>
             <td class='label'>
               Average Compositions
             </td>
@@ -94,7 +96,7 @@
               5/25 min.
             </td>
           </tr>
-          <tr id='table-4'>
+          <tr>
             <td class='label'>
               Mode Compositions
             </td>
@@ -102,9 +104,17 @@
               5/25 min.
             </td>
           </tr>
+          <tr>
+            <td class='label'>
+              Most Used Typeface
+            </td>
+            <td>
+              Helvetica
+            </td>
+          </tr>
         </table>
       </div>
-      <div class='last'></div>
+      <div class='last' id='eight'></div>
     </div>
   </div>
 </html>
